@@ -17,7 +17,7 @@
             <p><?php echo akina_option('admin_des', 'Hi, Mashiro?'); ?></p>
             <?php if (akina_option('social_style')=="v2"): ?>
             <div class="top-social_v2">
-                <li id="bg-pre"><img class="flipx" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/next-b.svg"/></li>
+                <li id="bg-pre"><img class="flipx" src="https://wordpress.stsecurity.moe/wp-content/uploads/2021/07/next-b.svg"/></li>
                 <?php if (akina_option('github')){ ?>
                 <li><a href="<?php echo akina_option('github', ''); ?>" target="_blank" class="social-github" title="github"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/github.png"/></a></li>
                 <?php } ?>	
@@ -70,13 +70,13 @@
                 <?php if (akina_option('email_name') && akina_option('email_domain')){ ?>
                 <li><a onclick="mail_me()" class="social-wangyiyun" title="E-mail"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/email.svg"/></a></li>
                 <?php } ?>	
-                <li id="bg-next"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/next-b.svg"/></li>	
+                <li id="bg-next"><img src="https://wordpress.stsecurity.moe/wp-content/uploads/2021/07/next-b.svg"/></li>	
             </div>
             <?php endif; ?>
         </div>
         <?php if (akina_option('social_style')=="v1"): ?>
 		<div class="top-social">
-		<li id="bg-pre"><img class="flipx" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/next-b.svg"/></li>
+		<li id="bg-pre"><img class="flipx" src="https://wordpress.stsecurity.moe/wp-content/uploads/2021/07/next-b.svg"/></li>
 		<?php if (akina_option('github')){ ?>
 		<li><a href="<?php echo akina_option('github', ''); ?>" target="_blank" class="social-github" title="github"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/github.png"/></a></li>
 		<?php } ?>	
@@ -129,7 +129,7 @@
 		<?php if (akina_option('email_name') && akina_option('email_domain')){ ?>
 		<li><a onclick="mail_me()" class="social-wangyiyun" title="E-mail"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/email.svg"/></a></li>
 		<?php } ?>	
-		<li id="bg-next"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/next-b.svg"/></li>	
+		<li id="bg-next"><img src="https://wordpress.stsecurity.moe/wp-content/uploads/2021/07/next-b.svg"/></li>	
 	  	</div>
         <?php endif; ?>
 	</div>
