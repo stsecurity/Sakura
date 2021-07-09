@@ -17,7 +17,7 @@ class Single(object):
 
   def hash(self):
     hasher = hashlib.md5()
-    with open('gallary/' + self.file, 'rb') as afile:
+    with open('gallery/' + self.file, 'rb') as afile:
       buf = afile.read()
       hasher.update(buf)
     self.hash = hasher.hexdigest()
@@ -27,7 +27,7 @@ class Single(object):
     self.webp_th = 'webp/' + self.hash + '.th.webp'
 
   def optimize(self):
-    im = Image.open('gallary/' + self.file).convert('RGB')
+    im = Image.open('gallery/' + self.file).convert('RGB')
     im.save(self.jpeg, 'JPEG') # todo: TinyPNG API
     im.save(self.webp, 'WEBP')
     im.thumbnail((450, 300))
@@ -49,7 +49,7 @@ class Single(object):
     return self.mani
 
 def gen_manifest_json():
-  onlyfiles = [f for f in os.listdir('gallary') if os.path.isfile(os.path.join('gallary', f))]
+  onlyfiles = [f for f in os.listdir('gallery') if os.path.isfile(os.path.join('gallery', f))]
   id = 1
   Manifest = {}
   for f in onlyfiles:

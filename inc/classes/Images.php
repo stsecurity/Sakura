@@ -143,7 +143,7 @@ class Images
 
     public static function cover_gallery() {
         if (akina_option('cover_cdn_options') == "type_2") {
-            $img_array = glob(get_template_directory() . "/manifest/gallary/*.{gif,jpg,png}", GLOB_BRACE);
+            $img_array = glob(get_template_directory() . "/manifest/gallery/*.{gif,jpg,png}", GLOB_BRACE);
             $img = array_rand($img_array);
             $imgurl = trim($img_array[$img]);
             $imgurl = str_replace(get_template_directory(), get_template_directory_uri(), $imgurl);
